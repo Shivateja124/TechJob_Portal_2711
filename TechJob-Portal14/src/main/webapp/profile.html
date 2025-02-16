@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <title>Profile - Job Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+          
+        }
+        header {
+            background-color: white;
+            color:black;
+           
+           
+           
+        }
+        nav a{
+            color: black;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .profile-item {
+            margin-bottom: 15px;
+        }
+        .edit-button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .edit-button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #030508;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="seeker-dashboard.html">Dashboard</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="profile-container">
+        <h2>Your Profile</h2>
+        <div class="profile-item">
+            <strong>Name:</strong> <span id="profileName">John Doe</span>
+        </div>
+        <div class="profile-item">
+            <strong>Email:</strong> <span id="profileEmail">johndoe@example.com</span>
+        </div>
+        <div class="profile-item">
+            <strong>Username:</strong> <span id="profileUsername">johndoe</span>
+        </div>
+        <div class="profile-item">
+            <button onclick="editProfile()" class="edit-button">Edit Profile</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Job Portal. All Rights Reserved By Shivateja.</p>
+    </div>
+
+</body>
+</html>

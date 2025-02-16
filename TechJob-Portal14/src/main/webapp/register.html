@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Register - TechJob Portal</title>
+    <style>
+        header {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        nav {
+            gap: 20px;
+            display: flex;
+            font-size: 17px;
+            padding: 0px 25px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: black;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 3px 12px;
+        }
+
+        header nav a:hover {
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+            border-radius: 10px;
+
+        }
+
+
+        header h1 {
+            padding: 0px 20px;
+        }
+        .register-container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .register-button {
+            width: 100%;
+            padding: 10px;
+            background-color:#c120c7eb;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .register-button:hover {
+            background-color: #c120c7eb;
+        }
+
+        footer {
+            width: 96vw;
+            height: 7vh;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            padding: 8px;
+            font-size: 20px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechJob Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            
+        </nav>
+    </header>
+   <form action="RegisterServlet" method="post">
+    <div class="register-container">
+        <h2>Register</h2>
+        <input type="text" id="fullname" name="fullname" class="input-field" placeholder="Full Name">
+
+        <input type="email" id="email" name="email" class="input-field" placeholder="Email">
+
+        <input type="tel" id="Contact" name="contact" class="input-field" placeholder="Contact">
+
+        <input type="text" id="username" name="username" class="input-field" placeholder="Username">
+
+        <input type="password" id="password" name="password" class="input-field" placeholder="Password">
+        <button class="register-button">Register</button>
+
+        <p>Already have an account ?<a href="login.html">Login</a></p>
+    </div>
+   </form>
+
+   <footer>
+    <p>&copy; 2024 Job Portal. All Rights Reserved By Shivateja.</p>
+   </footer>
+
+   
+</body>
+</html>
