@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Job Details - TechJob Portal</title>
+    <style>
+        header {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        nav {
+            gap: 20px;
+            display: flex;
+            font-size: 17px;
+            padding: 0px 25px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: black;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 3px 12px;
+        }
+
+        header nav a:hover {
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+            border-radius: 10px;
+
+        }
+
+
+        header h1 {
+            padding: 0px 20px;
+        }       
+
+        .job-details-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .apply-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .jobs-button {
+            padding: 10px 15px;
+            background-color: rgb(255, 0, 255);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .apply-button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }  
+
+        
+        footer {
+            width: 96vw;
+            height: 7vh;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            padding: 8px;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechJob Portal</h1>
+        <nav>
+            <a href="home.html">Home</a>
+        </nav>
+    </header>
+  <form action="JobDetailsServlet">
+    <div class="job-details-container">
+    <p>
+Navigate to the "See Jobs" section of the job portal website, where you can explore a comprehensive list of all available job openings. This section provides valuable information about each job opportunity, including the job title, the name of the company offering the position, the location of the job, and the application deadline. Additionally, you may find brief summaries of the job requirements, such as necessary skills and qualifications. The job listings are usually organized to allow easy filtering based on your preferences, such as job type, location, or industry.</p>
+        <button class="jobs-button">See-Jobs</button>
+    </div>
+  </form>
+ 
+    <footer>
+        <p>&copy; 2024 Job Portal. All Rights Reserved By Shivateja.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <title>Post a Job - TechJob Portal</title>
+    <style>
+        header {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        nav {
+            gap: 20px;
+            display: flex;
+            font-size: 17px;
+            padding: 0px 25px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: black;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 3px 12px;
+        }
+
+        header nav a:hover {
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+            border-radius: 10px;
+
+        }
+
+
+        header h1 {
+            padding: 0px 20px;
+        }
+
+        .add-job-container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .add-job-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+       
+        footer {
+            width: 96vw;
+            height: 7vh;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            padding: 8px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Portal</h1>
+        <nav>
+            <a href="recruiter-home.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+
+    <form action="AddJobServlet" method="post">
+        <div class="add-job-container">
+            <h2>Post a New Job</h2>
+
+            <input type="text" id="jobTitle" name="jobtitle" class="input-field" placeholder="Job Title" required>
+
+            <input type="text" id="companyName" name="companyname" class="input-field" placeholder="Company Name" required>
+            
+             <input type="text" id="qualification" name="qualification" class="input-field" placeholder="Qualification" required>
+
+            <input type="text" id="location" name="location" class="input-field" placeholder="Location" required>
+
+            <input type="datetime-local" id="deadline" name="deadline" class="input-field" placeholder="Deadline" required>
+
+            <button type="submit" class="add-job-button">Post Job</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Job Portal. All Rights Reserved By Shivateja.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <title>Dashboard - Recruiter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }body {
+            font-family: Arial, sans-serif;
+          
+        }
+        header {
+            background-color: white;
+            color:black;
+           
+           
+           
+        }
+        nav a{
+            color: black;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .dashboard-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .welcome-message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .job-postings {
+            margin-top: 20px;
+        }
+        .job-post {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .add-job-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .add-job-button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #030508;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-job.html">Post Job</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="welcome-message">Welcome, [Recruiter Name]!</div>
+        <h3>Your Job Postings</h3>
+        <div class="job-postings">
+            <div class="job-post">
+                <h4>Software Developer</h4>
+                <p>Applications: 15</p>
+                <p>Status: Active</p>
+            </div>
+            <div class="job-post">
+                <h4>UI/UX Designer</h4>
+                <p>Applications: 8</p>
+                <p>Status: Active</p>
+            </div>
+        </div>
+        <a href="add-job.html" class="add-job-button">Add New Job</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Job Portal. All Rights Reserved By Shivateja.</p>
+    </div>
+</body>
+</html>

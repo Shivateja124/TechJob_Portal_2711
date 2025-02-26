@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Job Apllications</title>
+    <style>
+       
+        header {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        nav {
+            gap: 20px;
+            display: flex;
+            font-size: 17px;
+            padding: 0px 25px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: black;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 3px 12px;
+        }
+
+        header nav a:hover {
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+            border-radius: 10px;
+
+        }
+
+
+        header h1 {
+            padding: 0px 20px;
+        }   
+
+        .applications-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            font-family: italic;
+            font-size: large;
+            background-color: hwb(0 100% 0%);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .applications-button {
+            padding: 10px 15px;
+            background-color: #f00cc7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+       
+        
+        footer {
+            width: 96vw;
+            height: 7vh;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            padding: 8px;
+            font-size: 20px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Portal</h1>
+        <nav>
+            <a href="recruiter-home.html">Home</a>
+            <a href="add-job.html">Add-Job</a>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+    <form action="ApplicationsServlet" method="post">
+        <div class="applications-container">
+            <p>"Welcome to the application dashboard! This platform is designed to streamline your recruitment process by providing a comprehensive overview of all candidates who have applied for positions within your company. Here, you can easily access detailed information about each applicant, including their full name, contact details, the specific job title they are interested in, and their uploaded resume. The dashboard is intuitive and user-friendly, allowing you to filter, sort, and organize applications based on your hiring requirements. Whether you want to review individual applications, shortlist potential candidates, or download resumes for offline evaluation, everything you need is at your fingertips. With this tool, you can efficiently manage your hiring pipeline and ensure that every applicant receives the attention they deserve. Our goal is to simplify the process and empower you to identify and onboard the right talent, enabling your company to grow and succeed."</p>
+             <br><br>
+            <input type="text" id="companyname" name="companyname" placeholder="Enter Company-Name" required style="width: 200px; height: 25px; padding: 5px; font-size: 14px;">
+           <br><br>
+           <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter Job-Name" required style="width: 200px; height: 25px; padding: 5px; font-size: 14px;">
+           <br>
+            <button class="applications-button">See-Appications</button>
+        </div>
+      </form>
+
+    <footer>
+        <p>&copy; 2024 Job Portal. All Rights Reserved By Shivateja.</p>
+    </footer>
+</body>
+</html>
